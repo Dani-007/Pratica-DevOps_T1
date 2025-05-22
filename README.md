@@ -47,6 +47,16 @@ Cada parte da aplicação é containerizada usando Docker. Você pode iniciar os
 ## ✅ Modo 1: Executar com **Docker Compose**
 
 Este é o método mais simples e recomendado.
+Abra o terminal na pasta raiz do projeto.
+
+Antes de rodar o container, certifique-se de instalar as dependências:
+
+```bash
+cd api
+npm install
+cd ..
+```
+agora sim pode 
 
 ```bash
 docker-compose up --build
@@ -66,6 +76,8 @@ docker-compose down -v
 ---
 
 ## 🛠️ Modo 2: Executar Manualmente (containers individuais)
+
+Abra o terminal na pasta raiz do projeto.
 
 ### 1. 🐬 Banco de Dados MySQL
 
@@ -87,6 +99,7 @@ Antes de rodar o container, certifique-se de instalar as dependências:
 ```bash
 cd api
 npm install
+cd ..
 ```
 
 Em seguida, execute:
@@ -143,6 +156,3 @@ sudo docker run -d \
   * `php:8.2-apache`
 * O frontend em PHP se comunica com o backend via `http://node-container:9001`.
 
----
-
-Se quiser, posso salvar isso como arquivo `README.md` para você baixar. Deseja que eu gere?
