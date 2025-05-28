@@ -40,23 +40,13 @@ Cada parte da aplicação é containerizada usando Docker. Você pode iniciar os
 
 * Docker
 * Docker Compose
-* **Node.js** e **npm** (somente se quiser rodar o backend localmente fora do container)
-
+* **Node.js** e **npm**
 ---
 
 ## ✅ Modo 1: Executar com **Docker Compose**
 
 Este é o método mais simples e recomendado.
 Abra o terminal na pasta raiz do projeto.
-
-Antes de rodar o container, certifique-se de instalar as dependências:
-
-```bash
-cd api
-npm install
-cd ..
-```
-agora sim pode 
 
 ```bash
 docker-compose up --build
@@ -93,16 +83,6 @@ sudo docker exec -i mysql-container mysql -uroot -p12345 < api/db/script.sql
 ```
 
 ### 2. 🟦 Backend Node.js
-
-Antes de rodar o container, certifique-se de instalar as dependências:
-
-```bash
-cd api
-npm install
-cd ..
-```
-
-Em seguida, execute:
 
 ```bash
 # Build da imagem
